@@ -8,6 +8,6 @@
 5. $ python job_app.py
 6. to connect the code to a server, run the following in ur terminal: \
     $ export FLASK_APP=app.py \
-    $ flask run \
+    $ flask run
 7. $ python job_app.py
 8. navigate to server
