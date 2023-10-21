@@ -1,0 +1,109 @@
+/* i'm just styling elements as they appear from top to bottom; left to right; outside to inside */
+
+.search {
+    margin: 20px;
+}
+
+.searchbar {
+    padding: 10px;
+    background-color: rgb(226, 241, 254);
+    border-radius: 25px;
+    border: None;
+    width: 30%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+::placeholder {
+    color: rgb(155, 154, 154);
+}
+
+.dropdown {
+    padding: 10px;
+    border-radius: 25px;
+    border-color: rgb(249, 219, 201);
+    margin-left: 15px;
+    color: rgb(110, 109, 109);
+}
+
+.checkbox {
+    padding: 2px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: small;
+    color: rgb(110, 109, 109);
+}
+
+.search input[type=submit], 
+.search button[type=submit] {
+    margin-top: 10px;
+    padding: 5px;
+    border: solid;
+    border-radius: 10px; 
+    border-color: rgb(226, 241, 254);
+    background-color: rgb(226, 241, 254);
+    color: rgb(110, 109, 109);
+}
+
+.showingres {
+    font-family: 'Varela Round', sans-serif;
+    color: gray;
+    font-size: x-large;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.filter {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(255, 235, 225);
+    border-radius: 25px;
+    /* width: 40%; */
+    font-size: large;
+    color:rgb(137, 137, 137);
+    position: relative;
+    bottom: 2px;
+}
+
+.listing {
+    font-family: 'Varela Round', sans-serif;
+    background-color: rgb(226, 241, 254);
+    border-radius: 30px;
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-bottom: 4px;
+    margin: 25px;
+}
+
+.listing-company {
+    color: rgb(91, 91, 91);
+    /* font-size: x-large; */
+    margin: 0px;
+}
+
+.newfeat {
+    margin: 1px;
+    padding: 6px;
+    /* border: solid rgb(182, 182, 182); */
+    background-color: #7787e6;
+    border-radius: 5px;
+    /* width: 40%; */
+    font-size: x-small;
+    color: rgb(255, 254, 254);
+    position: relative;
+    bottom: 6.5px;
+    left: 15px;
+}
+
+.listing-position {
+    color: darkorange;
+    font-size: large;
+    padding-top: 5px;
+}
+
+.extra-info {
+    font-size: medium;
+    color: darkgray;
+}
+
+.listing-postedAt, .listing-contract, .listing-location {
+    font-size: small;
+}

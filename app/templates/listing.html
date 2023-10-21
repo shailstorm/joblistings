@@ -1,0 +1,17 @@
+{% macro displayListing(listing) %}
+    <div class="listing">
+        <h1 class="listing-company"> {{ listing.company }} {{ new_feat(listing) }} </h1>
+        <h2 class="listing-position"> {{ listing.position }} </h2>
+        
+        <div class="extra-info">
+            <span class="listing-postedAt"> {{ listing.postedAt }} </span> |
+            <span class="listing-contract"> {{ listing.contract }} </span> |
+            <span class="listing-location"> {{ listing.location }} </span>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro new_feat(listing) %}
+    {% if listing.new == true %}<span class="newfeat">NEW!</span> {% endif %}
+    {% if listing.featured == true %} <span class="newfeat">FEATURED</span> {% endif %}
+{% endmacro %}

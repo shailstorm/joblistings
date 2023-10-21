@@ -1,0 +1,40 @@
+<form class="search" action="/" method="GET">
+    <div>
+        <input class="searchbar" type="text" name="companysearch" placeholder="search for a company">
+
+        <select class="dropdown" name="role" title="role">
+            <option value=''         >Role</option>
+            <option value='Backend'  >Backend</option>
+            <option value='Frontend' >Frontend</option>
+            <option value='Fullstack'>Full Stack</option>
+        </select>
+
+        <select class="dropdown" name="level" title="level">
+            <option value=''         >Level</option>
+            <option value='Junior'   >Junior</option>
+            <option value='Midweight'>Midweight</option>
+            <option value='Senior'   >Senior</option>
+        </select>
+
+        <select class="dropdown" name="contract" title="contract">
+            <option value='' >Contract</option>
+            <option value='Full Time'>Full Time</option>
+            <option value='Part Time'>Part Time</option>
+        </select>    
+    </div>
+    
+    <div class="checkbox">
+        <input type="checkbox" name="new" title="toggle new">
+        <label class="check" for="new">Include only new listings</label>
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox" name="featured" title="toggle featured">
+        <label class="check" for="featured">Include only featured listings</label>
+    </div>
+    
+    <div class="submit">
+        <input type="submit" value="search" title="submit">
+    </div>
+
+</form>

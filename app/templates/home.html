@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/style.css">
+        <title>Job Listings</title>
+
+    </head>
+    <body>
+        <!-- search filters -->
+        {% include 'filtersform.html' %}
+
+        <!-- display selected filters -->
+        <div class="showingres-container">
+            {% if filters|length > 0 and listings|length == 0 %}
+            <h1 class="showingres">
+                No results for: 
+                    {% for filter in filters %} 
+                    <span class="filter">{{ filter }}</span> 
+                    {% endfor %}
+            </h1>
+
+            {% elif filters|length > 0 and listings|length > 0 %}
+            <h1 class="showingres">
+                Displaying results for: 
+                    {% for filter in filters %} 
+                    <span class="filter">{{ filter }}</span> 
+                    {% endfor %}
+            </h1>
+
+            {% else %}
+                <h1 class="showingres">Displaying all results</h1>
+            {% endif %}
+        </div>
+
+        <!-- search results -->
+        <div class="results-container">
+            {% from "listing.html" import displayListing %}
+            {%- for listing in listings %}
+            <div class="listing">
+                {{ displayListing(listing) }}
+            </div>
+            {%- endfor %}
+        </div>
+
+    </body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+</style>
