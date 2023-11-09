@@ -8,10 +8,9 @@ def getQuery(): # returns filtersform results in the form of a query
     # when first loading page, all values are None. after form submission, 
     # unselected form elements have value ''. so change None to '' to standardize
     searched = request.args.get('companysearch') if request.args.get('companysearch') else ''
-    departmentsearch = request.args.get('departmentsearch') if request.args.get('departmentsearch') else ''
-    role     = request.args.get('role')          if request.args.get('role')          else ''
-    level    = request.args.get('level')         if request.args.get('level')         else ''
-    contract = request.args.get('contract')      if request.args.get('contract')      else ''
+    role = request.args.get('role') if request.args.get('role') else ''
+    level = request.args.get('level') if request.args.get('level') else ''
+    contract = request.args.get('contract') if request.args.get('contract') else ''
 
     # if checkboxes are selected, give them value True
     checkboxquery = []
