@@ -5,8 +5,5 @@
   if using pip: $ python -m venv /path/to/new/virtual/environment \
   if using conda: $ conda create -n yourenvname python=x.x anaconda
 4. install dependencies: $ pip install -r requirements.txt
-6. to connect the app to a server, run the following in ur terminal: \
-    $ export FLASK_APP=app.py \
-    $ flask run
 7. $ python job_app.py
 8. navigate to server
